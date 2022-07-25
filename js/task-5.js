@@ -1,9 +1,9 @@
 const country = prompt("Куда оформляете доставку?");
-const normalizedCountryInput = country.toUpperCase();
+// const normalizedCountryInput = country.toUpperCase();
 let cost;
 
 
-switch (country) {
+switch (country.toUpperCase()) {
     case "Китай":
         cost = 100;
         alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
