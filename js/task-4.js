@@ -4,22 +4,13 @@ let totalPrice = 0;
 let enterNumber = prompt("Сколько дроидов Вы хотите купить?");
 
 
+totalPrice = enterNumber * pricePerDroid;
  
 if (totalPrice > credits) {
     alert("Недостаточно средств на счету!");
 } else if (enterNumber === null) {
     alert('Отменено пользователем!');
 }
-
-// const checkPassword = prompt("Enter your password");
-
-// if (checkPassword === ADMIN_PASSWORD) {
-//     message = "Добро пожаловать!"
-//     alert(message);
-// } else if (checkPassword === null) {
-//     message = 'Отменено пользователем!';
-//     alert(message);
-// } else {
-//    message = 'Доступ запрещен, неверный пароль!';
-//    alert(message);
-// }
+else {
+    alert(`'Вы купили ${enterNumber} дроидов, на счету осталось ${credits - totalPrice} кредитов.'`)
+}

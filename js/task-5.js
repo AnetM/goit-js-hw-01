@@ -2,29 +2,28 @@ const country = prompt("Куда оформляете доставку?");
 // const normalizedCountryInput = country.toUpperCase();
 let cost;
 
-
-switch (country.toUpperCase()) {
-    case "Китай":
+switch (country.toLowerCase()) {
+    case "китай":
         cost = 100;
         alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
         break;
     
-    case "Чили":
+    case "чили":
         cost = 250;
         alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
         break;
     
-    case "Австралия":
+    case "австралия":
         cost = 170;
         alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
         break;
     
-    case "Индия":
+    case "индия":
         cost = 80;
         alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
         break;
     
-    case "Ямайка":
+    case "ямайка":
         cost = 120;
         alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
         break;
